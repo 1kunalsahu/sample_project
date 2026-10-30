@@ -1,0 +1,5 @@
+condition: E3
+name: cross_model_critic
+critic: true
+regeneration: false
+retrieval_k: 5

@@ -1,0 +1,10 @@
+name: FiQA-2018 (BEIR)
+source: https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/fiqa.zip
+license: See FiQA and BEIR source records; verify terms before redistribution.
+corpus: data/raw/fiqa/corpus.jsonl
+queries: data/raw/fiqa/queries.jsonl
+qrels: data/raw/fiqa/qrels
+default_split: test
+answerability_labels: unavailable
+gold_answers: unavailable
+question_types: not annotated in source benchmark

@@ -1,0 +1,6 @@
+# Local Ollama models (verify with `ollama list`). No API key is required.
+backend: ollama
+base_url: http://localhost:11434
+generator: llama3.2:latest
+critic: llama3:latest
+evaluator: llama3:latest

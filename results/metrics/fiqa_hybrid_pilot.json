@@ -1,0 +1,558 @@
+{
+  "dataset": "FiQA-2018 BEIR",
+  "split": "test",
+  "retrieval": {
+    "method": "BM25 + dense + RRF + cross-encoder reranker",
+    "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "reranker_model": "BAAI/bge-reranker-base",
+    "candidate_k": 50,
+    "k": 10,
+    "rrf_constant": 60
+  },
+  "processed": 5,
+  "question_level_evidence_hit_rate": 0.4,
+  "evidence_set_recall": 0.3,
+  "per_example": [
+    {
+      "id": "fiqa_test_8",
+      "question": "How to deposit a cheque issued to an associate in my business into my business account?",
+      "retrieved_ids": [
+        "65404",
+        "316359",
+        "309023",
+        "184697",
+        "564553",
+        "188893",
+        "216200",
+        "580624",
+        "301833",
+        "590102"
+      ],
+      "retrieval_details": [
+        {
+          "chunk_id": "65404",
+          "score": 0.9972303509712219,
+          "source_ranks": {
+            "0": 1,
+            "1": 1
+          },
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "chunk_id": "316359",
+          "score": 0.734515905380249,
+          "source_ranks": {
+            "0": 45,
+            "1": 23
+          },
+          "rrf_score": 0.021572002294893863
+        },
+        {
+          "chunk_id": "309023",
+          "score": 0.6767211556434631,
+          "source_ranks": {
+            "0": 48,
+            "1": 6
+          },
+          "rrf_score": 0.02441077441077441
+        },
+        {
+          "chunk_id": "184697",
+          "score": 0.6588842272758484,
+          "source_ranks": {
+            "1": 21
+          },
+          "rrf_score": 0.012345679012345678
+        },
+        {
+          "chunk_id": "564553",
+          "score": 0.5078191161155701,
+          "source_ranks": {
+            "0": 7,
+            "1": 7
+          },
+          "rrf_score": 0.029850746268656716
+        },
+        {
+          "chunk_id": "188893",
+          "score": 0.43308284878730774,
+          "source_ranks": {
+            "1": 5
+          },
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "chunk_id": "216200",
+          "score": 0.23742152750492096,
+          "source_ranks": {
+            "0": 5,
+            "1": 32
+          },
+          "rrf_score": 0.02625418060200669
+        },
+        {
+          "chunk_id": "580624",
+          "score": 0.22192901372909546,
+          "source_ranks": {
+            "1": 12
+          },
+          "rrf_score": 0.013888888888888888
+        },
+        {
+          "chunk_id": "301833",
+          "score": 0.19857686758041382,
+          "source_ranks": {
+            "0": 4,
+            "1": 34
+          },
+          "rrf_score": 0.026263297872340427
+        },
+        {
+          "chunk_id": "590102",
+          "score": 0.1495640128850937,
+          "source_ranks": {
+            "0": 16,
+            "1": 4
+          },
+          "rrf_score": 0.028782894736842105
+        }
+      ],
+      "gold_ids": [
+        "566392",
+        "65404"
+      ],
+      "recall_at_k": 0.5,
+      "hit_at_k": 1.0
+    },
+    {
+      "id": "fiqa_test_15",
+      "question": "Can I send a money order from USPS as a business?",
+      "retrieved_ids": [
+        "472629",
+        "229251",
+        "325273",
+        "373905",
+        "466146",
+        "447917",
+        "230003",
+        "131502",
+        "224000",
+        "472857"
+      ],
+      "retrieval_details": [
+        {
+          "chunk_id": "472629",
+          "score": 0.9747669100761414,
+          "source_ranks": {
+            "1": 26
+          },
+          "rrf_score": 0.011627906976744186
+        },
+        {
+          "chunk_id": "229251",
+          "score": 0.5398086309432983,
+          "source_ranks": {
+            "1": 5
+          },
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "chunk_id": "325273",
+          "score": 0.4843137562274933,
+          "source_ranks": {
+            "0": 20,
+            "1": 1
+          },
+          "rrf_score": 0.02889344262295082
+        },
+        {
+          "chunk_id": "373905",
+          "score": 0.29257404804229736,
+          "source_ranks": {
+            "0": 38,
+            "1": 49
+          },
+          "rrf_score": 0.019378393559258564
+        },
+        {
+          "chunk_id": "466146",
+          "score": 0.27804139256477356,
+          "source_ranks": {
+            "1": 10
+          },
+          "rrf_score": 0.014285714285714285
+        },
+        {
+          "chunk_id": "447917",
+          "score": 0.21691884100437164,
+          "source_ranks": {
+            "1": 9
+          },
+          "rrf_score": 0.014492753623188406
+        },
+        {
+          "chunk_id": "230003",
+          "score": 0.13570281863212585,
+          "source_ranks": {
+            "0": 2
+          },
+          "rrf_score": 0.016129032258064516
+        },
+        {
+          "chunk_id": "131502",
+          "score": 0.10043630003929138,
+          "source_ranks": {
+            "0": 49,
+            "1": 4
+          },
+          "rrf_score": 0.024799311926605505
+        },
+        {
+          "chunk_id": "224000",
+          "score": 0.0598904974758625,
+          "source_ranks": {
+            "0": 3,
+            "1": 2
+          },
+          "rrf_score": 0.03200204813108039
+        },
+        {
+          "chunk_id": "472857",
+          "score": 0.05214059352874756,
+          "source_ranks": {
+            "0": 9
+          },
+          "rrf_score": 0.014492753623188406
+        }
+      ],
+      "gold_ids": [
+        "325273"
+      ],
+      "recall_at_k": 1.0,
+      "hit_at_k": 1.0
+    },
+    {
+      "id": "fiqa_test_18",
+      "question": "1 EIN doing business under multiple business names",
+      "retrieved_ids": [
+        "377152",
+        "176975",
+        "504317",
+        "407378",
+        "8415",
+        "348480",
+        "385484",
+        "391403",
+        "309023",
+        "397510"
+      ],
+      "retrieval_details": [
+        {
+          "chunk_id": "377152",
+          "score": 0.29428187012672424,
+          "source_ranks": {
+            "0": 1,
+            "1": 8
+          },
+          "rrf_score": 0.031099324975891997
+        },
+        {
+          "chunk_id": "176975",
+          "score": 0.23544786870479584,
+          "source_ranks": {
+            "0": 26
+          },
+          "rrf_score": 0.011627906976744186
+        },
+        {
+          "chunk_id": "504317",
+          "score": 0.08832299709320068,
+          "source_ranks": {
+            "0": 9,
+            "1": 3
+          },
+          "rrf_score": 0.03036576949620428
+        },
+        {
+          "chunk_id": "407378",
+          "score": 0.0759446993470192,
+          "source_ranks": {
+            "0": 31,
+            "1": 34
+          },
+          "rrf_score": 0.021627308861351415
+        },
+        {
+          "chunk_id": "8415",
+          "score": 0.05961582064628601,
+          "source_ranks": {
+            "0": 10,
+            "1": 5
+          },
+          "rrf_score": 0.02967032967032967
+        },
+        {
+          "chunk_id": "348480",
+          "score": 0.05750858038663864,
+          "source_ranks": {
+            "0": 3,
+            "1": 50
+          },
+          "rrf_score": 0.024963924963924963
+        },
+        {
+          "chunk_id": "385484",
+          "score": 0.05146544426679611,
+          "source_ranks": {
+            "0": 13
+          },
+          "rrf_score": 0.0136986301369863
+        },
+        {
+          "chunk_id": "391403",
+          "score": 0.048743754625320435,
+          "source_ranks": {
+            "0": 29,
+            "1": 6
+          },
+          "rrf_score": 0.026387470207694927
+        },
+        {
+          "chunk_id": "309023",
+          "score": 0.04600981995463371,
+          "source_ranks": {
+            "0": 37,
+            "1": 30
+          },
+          "rrf_score": 0.021420389461626575
+        },
+        {
+          "chunk_id": "397510",
+          "score": 0.03478354960680008,
+          "source_ranks": {
+            "0": 7,
+            "1": 9
+          },
+          "rrf_score": 0.029418126757516764
+        }
+      ],
+      "gold_ids": [
+        "88124"
+      ],
+      "recall_at_k": 0.0,
+      "hit_at_k": 0.0
+    },
+    {
+      "id": "fiqa_test_26",
+      "question": "Applying for and receiving business credit",
+      "retrieved_ids": [
+        "176284",
+        "500755",
+        "6341",
+        "336468",
+        "425352",
+        "128913",
+        "169632",
+        "255393",
+        "483354",
+        "79136"
+      ],
+      "retrieval_details": [
+        {
+          "chunk_id": "176284",
+          "score": 0.7456814646720886,
+          "source_ranks": {
+            "0": 1,
+            "1": 1
+          },
+          "rrf_score": 0.03278688524590164
+        },
+        {
+          "chunk_id": "500755",
+          "score": 0.502724826335907,
+          "source_ranks": {
+            "1": 5
+          },
+          "rrf_score": 0.015384615384615385
+        },
+        {
+          "chunk_id": "6341",
+          "score": 0.21722641587257385,
+          "source_ranks": {
+            "1": 8
+          },
+          "rrf_score": 0.014705882352941176
+        },
+        {
+          "chunk_id": "336468",
+          "score": 0.2022574543952942,
+          "source_ranks": {
+            "0": 43,
+            "1": 3
+          },
+          "rrf_score": 0.02558175373709354
+        },
+        {
+          "chunk_id": "425352",
+          "score": 0.14510883390903473,
+          "source_ranks": {
+            "0": 7
+          },
+          "rrf_score": 0.014925373134328358
+        },
+        {
+          "chunk_id": "128913",
+          "score": 0.14399302005767822,
+          "source_ranks": {
+            "1": 11
+          },
+          "rrf_score": 0.014084507042253521
+        },
+        {
+          "chunk_id": "169632",
+          "score": 0.13921886682510376,
+          "source_ranks": {
+            "0": 11
+          },
+          "rrf_score": 0.014084507042253521
+        },
+        {
+          "chunk_id": "255393",
+          "score": 0.13677972555160522,
+          "source_ranks": {
+            "1": 7
+          },
+          "rrf_score": 0.014925373134328358
+        },
+        {
+          "chunk_id": "483354",
+          "score": 0.13645857572555542,
+          "source_ranks": {
+            "0": 39,
+            "1": 6
+          },
+          "rrf_score": 0.025252525252525256
+        },
+        {
+          "chunk_id": "79136",
+          "score": 0.12038295716047287,
+          "source_ranks": {
+            "1": 13
+          },
+          "rrf_score": 0.0136986301369863
+        }
+      ],
+      "gold_ids": [
+        "285255",
+        "350819"
+      ],
+      "recall_at_k": 0.0,
+      "hit_at_k": 0.0
+    },
+    {
+      "id": "fiqa_test_34",
+      "question": "401k Transfer After Business Closure",
+      "retrieved_ids": [
+        "134187",
+        "458917",
+        "260998",
+        "483268",
+        "500562",
+        "411354",
+        "64459",
+        "174335",
+        "42537",
+        "87141"
+      ],
+      "retrieval_details": [
+        {
+          "chunk_id": "134187",
+          "score": 0.20934495329856873,
+          "source_ranks": {
+            "0": 22,
+            "1": 11
+          },
+          "rrf_score": 0.026279628993473032
+        },
+        {
+          "chunk_id": "458917",
+          "score": 0.19159018993377686,
+          "source_ranks": {
+            "1": 24
+          },
+          "rrf_score": 0.011904761904761904
+        },
+        {
+          "chunk_id": "260998",
+          "score": 0.1056898832321167,
+          "source_ranks": {
+            "1": 4
+          },
+          "rrf_score": 0.015625
+        },
+        {
+          "chunk_id": "483268",
+          "score": 0.0993323028087616,
+          "source_ranks": {
+            "1": 15
+          },
+          "rrf_score": 0.013333333333333334
+        },
+        {
+          "chunk_id": "500562",
+          "score": 0.0852934867143631,
+          "source_ranks": {
+            "0": 21
+          },
+          "rrf_score": 0.012345679012345678
+        },
+        {
+          "chunk_id": "411354",
+          "score": 0.0685715451836586,
+          "source_ranks": {
+            "1": 12
+          },
+          "rrf_score": 0.013888888888888888
+        },
+        {
+          "chunk_id": "64459",
+          "score": 0.060710206627845764,
+          "source_ranks": {
+            "0": 13
+          },
+          "rrf_score": 0.0136986301369863
+        },
+        {
+          "chunk_id": "174335",
+          "score": 0.049748826771974564,
+          "source_ranks": {
+            "0": 8
+          },
+          "rrf_score": 0.014705882352941176
+        },
+        {
+          "chunk_id": "42537",
+          "score": 0.04208282753825188,
+          "source_ranks": {
+            "1": 10
+          },
+          "rrf_score": 0.014285714285714285
+        },
+        {
+          "chunk_id": "87141",
+          "score": 0.04100044071674347,
+          "source_ranks": {
+            "1": 25
+          },
+          "rrf_score": 0.011764705882352941
+        }
+      ],
+      "gold_ids": [
+        "599545"
+      ],
+      "recall_at_k": 0.0,
+      "hit_at_k": 0.0
+    }
+  ],
+  "note": "Retrieval metrics only; FiQA qrels are relevance labels, not human claim annotations or answer references."
+}

@@ -1,0 +1,4 @@
+condition: E1
+name: standard_rag
+critic: false
+retrieval_k: 5

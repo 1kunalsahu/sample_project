@@ -1,0 +1,18 @@
+seed: 17
+dataset: fiqa
+split: test
+question_limit: null
+retrieval:
+  k: 5
+  candidate_k: 50
+  rrf_constant: 60
+  dense_model: sentence-transformers/all-MiniLM-L6-v2
+  reranker_model: BAAI/bge-reranker-base
+  embedding_cache: .cache/criticrag
+generator:
+  backend: ollama
+  model: null
+  temperature: 0
+critic:
+  enabled: true
+  regeneration: false

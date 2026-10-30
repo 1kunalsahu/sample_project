@@ -1,0 +1,7 @@
+candidate_k: 50
+main_k: 5
+ablation_k: [3, 5, 10]
+rrf_constant: 60
+dense_model: sentence-transformers/all-MiniLM-L6-v2
+reranker_model: BAAI/bge-reranker-base
+embedding_cache: .cache/criticrag

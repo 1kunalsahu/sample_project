@@ -1,0 +1,5 @@
+condition: E2
+name: same_model_critic
+critic: true
+regeneration: false
+retrieval_k: 5

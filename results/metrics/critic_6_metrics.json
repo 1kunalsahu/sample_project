@@ -1,0 +1,41 @@
+{
+  "examples": 6,
+  "failed_examples": 0,
+  "retrieval": {
+    "3": {
+      "requested_k": 3,
+      "eligible_queries": 6,
+      "evidence_set_recall": 0.25,
+      "query_level_hit_rate": 0.3333333333333333
+    },
+    "5": {
+      "requested_k": 5,
+      "eligible_queries": 6,
+      "evidence_set_recall": 0.25,
+      "query_level_hit_rate": 0.3333333333333333
+    },
+    "10": {
+      "requested_k": 10,
+      "eligible_queries": 0,
+      "evidence_set_recall": null,
+      "query_level_hit_rate": null
+    }
+  },
+  "claims": {
+    "total": 39,
+    "evaluable": 39,
+    "unevaluated": 0,
+    "supported": 35,
+    "unsupported": 4,
+    "contradicted": 0,
+    "hallucination_rate": 0.10256410256410256,
+    "unsupported_rate": 0.10256410256410256,
+    "contradicted_rate": 0.0
+  },
+  "citation_faithfulness": 0.7083333333333334,
+  "cited_claims": 24,
+  "faithful_cited_claims": 17,
+  "citation_metric_definition": "cited claims judged SUPPORTED with at least one cited chunk in supporting_evidence_ids, divided by all cited claims; automated critic proxy, requires human validation.",
+  "input": "results\\raw\\critic_fiqa_test_20261026T143512Z.jsonl",
+  "limitations": []
+}

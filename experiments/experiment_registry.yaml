@@ -1,0 +1,7 @@
+E0: {status: PILOT_COMPLETED, reason: One-question baseline and critic hybrid RAG pilots completed; full paired evaluation remains to be run}
+E1: {status: COMPLETED, reason: Earlier FiQA test metrics are BM25-only; current runner supports BM25 + dense + RRF + reranker and must be rerun before reporting hybrid metrics}
+E2: {status: BLOCKED, reason: Human claim annotations are unavailable; LLM-based pilot metrics are not human labels}
+E3: {status: PILOT_COMPLETED, reason: Generator and critic use separate configured models in one-question smoke run; full cross-model evaluation remains to be run}
+E4: {status: NOT_IMPLEMENTED, reason: Regeneration is an interface option; experimental condition runner pending}
+E5: {status: READY, reason: Retrieval depth can be selected by CLI}
+E6: {status: BLOCKED, reason: No model matrix configured}
